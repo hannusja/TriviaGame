@@ -1,0 +1,23 @@
+#main {
+    text-align: center;
+    width: 960px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    background-color: beige;
+ 
+}
+h1 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+img{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
