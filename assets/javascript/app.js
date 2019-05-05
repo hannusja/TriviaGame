@@ -55,7 +55,7 @@ $(document).ready(function() {
         var chosen2 = $('input:radio[name=question2]:checked').val()
 
         if(chosen2!=undefined){
-            if(chosen2="hit"){
+            if(chosen2=="hit"){
                 rights++
             }
             else{
