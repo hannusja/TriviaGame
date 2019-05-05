@@ -37,83 +37,83 @@ $(document).ready(function() {
         clearInterval(intervalId);
         document.getElementById("endscreen").style.visibility = "visible"
         document.getElementById("main").style.visibility = "hidden"
-        $("#rights").append(rights)
-        $("#wrongs").append(wrongs)
-        $("#misses").append(misses)
+
+        var chosen1 = $("input:radio[name=question1]:checked").val()
+        if(chosen1!=undefined){
+            if(chosen1=="hit"){
+                rights++
+            }
+            else{
+            wrongs++
+            }
+        }
+
+        else{
+            misses++
+        }
+
+        var chosen2 = $('input:radio[name=question2]:checked').val()
+
+        if(chosen2!=undefined){
+            if(chosen2="hit"){
+                rights++
+            }
+            else{
+                wrongs++
+            }
+        }
+
+        else{
+            misses++
+        }
+
+        var chosen3 = $('input:radio[name=question3]:checked').val()
+
+        if(chosen3!=undefined){
+            if(chosen3=="hit"){
+                rights++
+            }
+            else{
+                wrongs++
+            }
+        }
+
+        else{
+            misses++
+        }
+        var chosen4 = $('input:radio[name=question4]:checked').val()
+
+        if(chosen4!=undefined){
+            if(chosen4=="hit"){
+                rights++
+            }
+            else{
+                wrongs++
+            }
+        }
+
+        else{
+            misses++
+        }
+
+        var chosen5 = $('input:radio[name=question5]:checked').val()
+
+        if(chosen5!=undefined){
+            if(chosen5=="hit"){
+                rights++
+            }
+            else{
+                wrongs++
+            }
+        }
+
+        else{
+            misses++
+        }
+    $("#rights").append(rights)
+    $("#wrongs").append(wrongs)
+    $("#misses").append(misses)
+
     }
- 
-// Check #x
-//$(".hit").prop( "checked", true );
- 
-// Uncheck #x
-//$( "#x" ).prop( "checked", false );
-var chosen1 = $('input:radio[name=question1]:checked').val()
-console.log(chosen1)
-if(chosen1!=undefined){
-    if(chosen1==hit)
-    rights++
-    else{
-        wrongs++
-    }
-}
-
-else{
-    misses++
-}
-
-var chosen2 = $('input:radio[name=question2]:checked').val()
-
-if(chosen2!=undefined){
-    if(chosen2="hit")
-    rights++
-    else{
-        wrongs++
-    }
-}
-
-else{
-    misses++
-}
-
-var chosen3 = $('input:radio[name=question3]:checked').val()
-
-if(chosen3!=undefined){
-    if(chosen3=="hit")
-    rights++
-    else{
-        wrongs++
-    }
-}
-
-else{
-    misses++
-}
-var chosen4 = $('input:radio[name=question4]:checked').val()
-
-if(chosen4!=undefined){
-    if(chosen4=="hit")
-    rights++
-    else{
-        wrongs++
-    }
-}
-
-else{
-    misses++
-}
-var chosen5 = $('input:radio[name=question5]:checked').val()
-
-if(chosen5!=undefined){
-    if(chosen5=="hit")
-    rights++
-    else{
-        wrongs++
-    }
-}
-
-else{
-    misses++
-}
-
 
 })
