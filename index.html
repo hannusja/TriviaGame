@@ -9,30 +9,45 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+    <div id="introscreen">
+            <h1>Trivia game</h1>
+            <p>Check if you know answers to the most important life questions!</p>
+            <br>
+            <button id="start">Start</button>
+    </div>
+
+    <div id="endscreen">
+        <h1>Trivia game</h1>
+        <p id="rights">You got it right: </p>
+        <p id="wrongs">You got it wrong: </p>
+        <p id="misses">You did not get it: </p>
+
+    </div>
+
     <div id="main">
         <div>
             <h1>Trivia game</h1>
             <p>Check if you know answers to the most important life questions!</p>
             <br>
-            <p>Time remaining:</p>
+            <p id="time">Time remaining:  </p>
         </div>
         <br>
 
         <div class="questionBlock">
             <p>Water is: </p>
-            <button>Wet</button>
-            <button>Dry</button>
-            <button>Potato</button>
-            <button>All the above</button>
+            <label><input type="radio" name="question1" value="hit">Wet</label>
+            <label><input type="radio" name="question1" value="miss">Dry</label>
+            <label><input type="radio" name="question1" value="miss">Potato</label>
+            <label><input type="radio" name="question1" value="miss">All the above</label>
         </div>
         <br>
 
         <div class="questionBlock">
             <p>Solve the equation: 2*2=</p>
-            <button>Potato</button>
-            <button>4</button>
-            <button>3.14</button>
-            <button>5 (Big Brother is watching you!)</button>
+            <label><input type="radio" name="question2" value="miss">Potato</label>
+            <label><input type="radio" name="question2" value="hit">4</label>
+            <label><input type="radio" name="question2" value="miss">3.14</label>
+            <label><input type="radio" name="question2" value="miss">5 (Big Brother is watching you!)</label>
         </div>
         <br>
         
@@ -40,32 +55,34 @@
             <p>Should you open the door marked with this sign: </p>
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Biohazard.svg" alt="Biohazard">
             <br>
-            <button>Yes</button>
-            <button>No</button>
-            <button>Potato</button>
-            <button>I'd like to start zombi Apocalypse now</button>
+            <label><input type="radio" name="question3" value="miss">Yes</label>
+            <label><input type="radio" name="question3" value="hit">No</label>
+            <label><input type="radio" name="question3" value="miss">Potato</label>
+            <label><input type="radio" name="question3" value="miss">I'd like to start zombi Apocalypse now</label>
         </div>
         <br>
 
         <div class="questionBlock">
             <p>What is the common term for the perennial nightshade Solanum tuberosum?</p>
-            <button>Polysaccharide</button>
-            <button>Amylum</button>
-            <button>Laticifer</button>
-            <button>Potato</button>
+            <form>
+                <label><input type="radio" name="question4" value="miss">Amylum</label>
+                <label><input type="radio" name="question4" value="miss">Polysaccharide</label>
+                <label><input type="radio" name="question4" value="miss">Laticifer</label>
+                <label><input type="radio" name="question4" value="hit">Potato</label>
+            </form>
         </div>
         <br>
 
         <div class="questionBlock">
             <p>Going to the gym? Don't forget to bring a </p>
-            <button>Towel</button>
-            <button>Potato</button>
-            <button>Courage and determination</button>
-            <button>I have no idea what's going on</button>
+            <label><input type="radio" name="question5" value="hit">Towel</label>
+            <label><input type="radio" name="question5" value="miss">Potato</label>
+            <label><input type="radio" name="question5" value="miss">Courage and determination</label>
+            <label><input type="radio" name="question5" value="miss">I have no idea what's going on</label>
         </div>
 
         <br>
-        <button>Done or Give up!</button>
+        <button id="done">Done or Give up!</button>
 
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
